@@ -6,7 +6,17 @@
 
 
 
+table{
+   width: 100%;
+}
 
+td {
+   border: solid;
+}
+
+input {
+   width: 100%;
+}
 
 
 
