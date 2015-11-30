@@ -11,12 +11,21 @@ table{
 }
 
 td {
-   border: solid;
+   border: .25px solid;
 }
 
-input {
+td input {
    width: 100%;
 }
+
+.even td, .even input{
+   background-color: #c7f1f2;
+}
+
+.even input, .odd input {
+   border: 0px;
+}
+
 
 
 

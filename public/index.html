@@ -55,19 +55,21 @@
 
     <div class="container">
       <!-- Example row of columns -->
-      <table>
-        <tr id="0">
-          <td width="60%"><input type="text" id="0-payee"/></td><td><input type="text" name="0-decrease"/></td><td><input type="text" name="0-increase"/></td><td><input type="text" name="0-balance"/></td>
-        </tr>
-        <tr>
-          <td><input type="text" name="0-category"/></td><td colspan="3"><input type="text" name="0-memo"/></td>
-        </tr>
+      <table id="register">
+        <tbody>
+        <!--<tr id="0-a">-->
+        <!--  <td width="60%"><input type="text" id="0-payee"/></td><td><input type="text" name="0-decrease"/></td><td><input type="text" name="0-increase"/></td><td><input type="text" name="0-balance"/></td>-->
+        <!--</tr>-->
+        <!--<tr id="0-b">-->
+        <!--  <td><input type="text" name="0-category"/></td><td colspan="2"><input type="text" name="0-memo"/></td><td><button id="0-save" class="savebtn">Save</button></td>-->
+        <!--</tr>-->
+        </tbody>
       </table>
 
       <hr>
 
       <footer>
-        <p>&copy; Company 2015</p>
+        <p>&copy; Programming Club 2015</p>
       </footer>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
@@ -75,6 +77,8 @@
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
+        <script type="text/javascript" src="js/async.js"></script>
+        <script src="js/numeral.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
