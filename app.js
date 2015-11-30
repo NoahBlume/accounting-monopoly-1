@@ -17,8 +17,8 @@ app.set('view engine', 'jade');
 // app.set('port', process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 3000);
 // app.set('ip', process.env.OPENSHIFT_NODEJS_IP || process.env.IP || "127.0.0.1");
 // var server = app.listen();
-var port = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 3000;
-var ip = process.env.OPENSHIFT_NODEJS_IP || process.env.IP || "127.0.0.1";
+var port = process.env.OPENSHIFT_NODEJS_PORT;
+var ip = process.env.OPENSHIFT_NODEJS_IP;
 
 var server = app.listen(port, ip, function () {
   var host = server.address().address;
