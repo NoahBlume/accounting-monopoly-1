@@ -30,12 +30,12 @@ $(document).ready(function(){
         var previousLedgerIndex = index-1;
         if(value.decrease){
             $('#' + index + '-decrease').val(numeral(value.decrease).format('$0,0.00'));
-            var balance = parseInt(numeral().unformat($('#' + previousLedgerIndex + '-balance').html())) - value.decrease;
+            var balance = parseInt(numeral().unformat($('#' + previousLedgerIndex + '-balance').html())) - parseInt(value.decrease);
             $('#' + index + '-balance').html(numeral(balance).format('$0,0.00'));
         }
         else {
             $('#' + index + '-increase').val(numeral(value.increase).format('$0,0.00'));
-            var balance = parseInt(numeral().unformat($('#' + previousLedgerIndex + '-balance').html()))  + value.increase;
+            var balance = parseInt(numeral().unformat($('#' + previousLedgerIndex + '-balance').html()))  + parseInt(value.increase);
             $('#' + index + '-balance').html(numeral(balance).format('$0,0.00'));
         }
         
