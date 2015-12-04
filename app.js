@@ -20,7 +20,7 @@ app.set('view engine', 'jade');
 // var port = process.env.PORT || 3000;
 // var ip = process.env.IP || "127.0.0.1";
 
-var ip = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
+var ip = process.env.OPENSHIFT_NODEJS_IP || process.env.IP;
 var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 
 console.log("port=" + port);
