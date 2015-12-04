@@ -26,6 +26,24 @@ td input {
    border: 0px;
 }
 
+tr[id$="=b"] {
+    border: 1px solid;
+    border-top: 0px;
+}
+
+tr[id$="=a"] {
+    border: 1px solid;
+    border-bottom: 0px;
+}
+
+tr[id$="=b"] td {
+    padding: 15px 0px 15px 0px;
+}
+
+body, .form-control{
+   font-size: 18px;
+}
+
 
 
 
